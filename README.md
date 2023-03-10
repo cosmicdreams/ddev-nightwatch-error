@@ -6,11 +6,17 @@ the right place to post this, but I'm hoping someone can help me out.
 
 ## Testing Instructions
 
-1. Install a new ddev backed Drupal 10 site using the following instructions
+1. Use this repo:
 
 ```bash
-mkdir my-drupal10-site
-cd my-drupal10-site
+ddev start
+```
+
+It was created using these installation steps:
+
+```bash
+mkdir ddev-nightwatch
+cd ddev-nightwatch
 ddev config --project-type=drupal10 --docroot=web --create-docroot
 ddev get ddev/ddev-selenium-standalone-chrome
 ddev start
