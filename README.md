@@ -35,9 +35,15 @@ ddev exec -d /var/www/html/web/core yarn test:nightwatch tests/Drupal/Nightwatch
 ```
 
 ## Probably causes
-When I watch this test run, using VNC, I see that browser closes after it tries to install the breakpoint module.  Having the browser be closed when the remaining tests run seem to lead to a lot of failures.
+
+When I watch this test run, using VNC, I see that browser closes after it tries to install the breakpoint module. Having
+the browser be closed when the remaining tests run seem to lead to a lot of failures.
 
 ## Unanswered questions
+
 Is this happening for others?
+
 If this is happening to a core test why isn't core failing to pass tests?
-Is the fact that this addon uses seleniarm/standalone-chromium:4.1.4-20220429 and not drupalci/chromedriver:production a contributing factor?
+
+Is the fact that this addon uses seleniarm/standalone-chromium:4.1.4-20220429 and not drupalci/chromedriver:production a
+contributing factor?
